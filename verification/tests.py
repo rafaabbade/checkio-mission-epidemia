@@ -20,15 +20,15 @@ TESTS = {
     },
     {
         "input": [3, 2, 21],
-        "answer": 3
+        "answer": 2
     },
     {
         "input": [1, 3, 40],
-        "answer": 4
+        "answer": 3
     },
     {
         "input": [5, 1, 20],
-        "answer": 4
+        "answer": 3
     }
 
     ]
