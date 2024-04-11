@@ -1,18 +1,26 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Uma nova pandemia é sempre possível (e temida), mas a experiência recente mostrou que atualmente a ciência é capaz de desenvolver vacinas eficazes em muito pouco tempo. Outra consequência da pandemia recente é que muito se estudou sobre epidemias em geral, e vários modelos matemáticos foram desenvolvidos.</p>
+<p>Neste problema vamos usar um modelo simples de epidemia:</p><ul>
+<li>Quando uma pessoa é infectada, ela infecta outras R pessoas, mas apenas no dia seguinte à sua infecção (R é chamado de fator reprodutivo da infecção). </li>
+<li>Ninguém é infectado mais do que uma vez.</li></ul>
+<p>Por exemplo, se no dia 0 da epidemia 3 pessoas são infectadas e o fator reprodutivo R é igual a 2, então no dia 1 outras 6 pessoas são infectadas (3 + 6 = 9 pessoas no total), no dia 2 outras 12 pessoas são infectadas (3 + 6 + 12 = 21 pessoas no total), no dia 3 outras 24 pessoas infectadas (3 + 6 + 12 + 24 = 45 pessoas no total), e assim por diante.</p>
+<p>Dados o número inicial de pessoas infectadas no dia 0 e o fator reprodutivo R da epidemia, escreva um programa para determinar qual o número de dias necessários para a epidemia infectar P ou mais pessoas no total.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Três inteiros representando, respectivamente, N, o número de pessoas infectadas no dia 0; R, o fator reprodutivo da infecção; P, o número alvo de pessoas a serem infectadas.
+
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um inteiro representando o número de dias necessários para que o total de pessoas infectadas atinja ou ultrapasse P.
+
+
 </p>
 
 
@@ -28,7 +36,8 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    dias_para_epidemia(1, 5, 156) >> 3
+dias_para_epidemia(2, 1, 11) >> 5
 </pre>
 {% endif %}
 </div>

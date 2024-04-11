@@ -38,7 +38,7 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "{{FUNC}}",
+            "python": "dias_para_epidemia",
             "js": "countConsecutiveSummers"
         },
         cover_code={

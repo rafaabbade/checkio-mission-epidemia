@@ -1,1 +1,18 @@
-{{CODIGO INICIAL}}
+def dias_para_epidemia(N, R, P):
+    # Seu código aqui
+    return None
+
+
+
+print("Example:")
+print(dias_para_epidemia(1, 5, 156))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+
+assert dias_para_epidemia(1, 5, 156) == 3
+assert dias_para_epidemia(2, 1, 11) == 5
+assert dias_para_epidemia(3, 2, 21) == 3
+assert dias_para_epidemia(1, 3, 40) == 4
+assert dias_para_epidemia(5, 1, 20) == 4
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
